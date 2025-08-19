@@ -6,7 +6,7 @@ resource "aws_instance" "Webserver" {
   tags = {
     Name = "Web-tf"
   }
-  vpc_security_group_ids = ["sg-0eb5b78aabca903f8"]
+  vpc_security_group_ids = ["sg-0fac28e6b64858524"]
   # user_data              =  "${file("install_nginx.sh")}"
   user_data = file("${path.module}/install_nginx.sh")
   key_name  = "aws"
